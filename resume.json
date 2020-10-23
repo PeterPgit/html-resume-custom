@@ -1,0 +1,74 @@
+{
+	"name": "John Smith",
+	"title": "Something Something Title",
+	"info": [
+		{
+			"type": "phone",
+			"data": "123-456-7890"
+		},
+		{
+			"type": "email",
+			"data": "RealEmail@email.com"
+		},
+		{
+			"type": "website",
+			"data": "google.com"
+		},
+		{
+			"type": "linkedin",
+			"data": ""
+		},
+		{
+			"type": "github",
+			"data": "github.com/"
+		}
+
+	],
+	"work": [
+		{
+			"job": "Job One",
+			"date": "01.1999-",
+			"place": "An Interesting Place",
+			"location": "Middle of Nowhere, KS",
+			"description": "A lot of really cool stuff happened at this place. As for now, this will be acting as a placeholder."
+		}
+	],
+	"volunteer": [
+		{
+			"job": "Placeholder Job",
+			"date": "00-0000",
+			"place": "Placeholder Place",
+			"location": "City, State"
+		}
+	],
+	"education": [
+		{
+			"job": "Placeholder School",
+			"date": "00.0000-",
+			"place": "PLACEHOLDER SCHOOL",
+			"location": "PLACEHOLDER LOCATION",
+			"graduation": "PLACEHOLDER DATE",
+			"gpa": "PLACEHOLDER GPA",
+			"description": "PLACEHOLDER DESCRIPTION"
+		}
+	],
+	"skills": {
+		"proficient": [
+			"Placeholder"
+		],
+		"familiar": [
+			"Placeholder"
+		],
+		"tools": [
+			"Placeholder"
+		]
+	},
+	"awards": [
+		"Placeholder Award One",
+		"Placeholder Award Two"
+	],
+	"strengths": [
+		"Placeholder Strength One",
+		"Placeholder Strength"
+	]
+}
