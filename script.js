@@ -1,31 +1,33 @@
-$.getJSON('resume.json', function(data) { 
+$.getJSON('resume.json', function (data) {
+	/* The parameter (data) will refer to the resume.json whenever called later on in the document */
 	loadHeader(data);
 	loadInfo(data.info);
 	loadExperience(data.work, "work");
 	loadExperience(data.volunteer, "volunteer");
 	loadExperience(data.education, "education");
-	loadSkills(data.skills);
+	loadExtracurriculars(data.extra, "extra");
+	loadSkills(data.skills, "skill");
 	loadList(data.awards, "awards");
-	loadList(data.strengths, "strengths");
-
-
 });
 
+/* Name, Title */
 function loadHeader(data) {
 	document.getElementById("name").textContent = data.name;
 	document.getElementById("title").textContent = data.title;
 }
 
+/* Phone, Email, Website, Github */
 function loadInfo(data) {
 	var ul = document.createElement('ul');
 	document.getElementById('hRight').appendChild(ul);
-	for(var i = 0; i < data.length; i++) {
+	for (var i = 0; i < data.length; i++) {
 		var li = document.createElement('li');
 		ul.appendChild(li);
 		li.textContent += data[i].data;
 	}
 };
 
+/* Work, Volunteer, Education */
 function loadExperience(data, type) {
 	var section = document.getElementById(type);
 	for (var i = 0; i < data.length; i++) {
@@ -35,8 +37,8 @@ function loadExperience(data, type) {
 		var details = createNode('div', "details");
 		details.appendChildren(
 			createNode('span', "job", current.job),
-			createNode('span', "date", current.date), 
-			document.createElement('br'), 
+			createNode('span', "date", current.date),
+			document.createElement('br'),
 			createNode('span', "place", current.place),
 			createNode('span', "location", current.location),
 			extraInfo(current, type),
@@ -46,6 +48,15 @@ function loadExperience(data, type) {
 	}
 };
 
+/* Extracurriculars */
+function loadExtracurriculars(data, type) {
+	var container = document.getElementById(type);
+	for (var i = 0; i < data.length; i++) {
+		container.appendChild(createNode("li", 'none', data[i]));
+	}
+}
+
+/* Graduation, GPA */
 function extraInfo(data, type) {
 	if (type == "education") {
 		if (data.graduation != null && data.gpa != null) {
@@ -61,18 +72,15 @@ function extraInfo(data, type) {
 	return document.createElement('br');
 }
 
-function loadSkills(data) {
-	var types = ["proficient", "familiar", "tools"];
-	var elements = [data.proficient, data.familiar, data.tools];
-	for (var i = 0; i < types.length; i++) {
-		var container = document.getElementById(types[i]);
-		var element = elements[i];
-		for (var j = 0; j < element.length; j++) {
-			container.appendChild(createNode("li", 'none', element[j]));
-		}
+/* Skills */
+function loadSkills(data, type) {
+	var container = document.getElementById(type);
+	for (var i = 0; i < data.length; i++) {
+		container.appendChild(createNode("li", 'none',data[i]));
 	}
 }
 
+/* Awards & Honors, Extracurriculars */
 function loadList(data, type) {
 	console.log(data, type);
 	var container = document.getElementById(type);
@@ -81,17 +89,16 @@ function loadList(data, type) {
 	}
 }
 
-HTMLElement.prototype.appendChildren = function() {
-  for (var i = 0 ; i < arguments.length ; i++)
-    this.appendChild(arguments[i]);
+HTMLElement.prototype.appendChildren = function () {
+	for (var i = 0; i < arguments.length; i++)
+		this.appendChild(arguments[i]);
 };
 
+/* Loads all into the HTML */
 function createNode(type, className, inner) {
 	var result = document.createElement(type);
 	result.className = className;
 	result.textContent = inner;
+	console.log(result);
 	return result;
 }
-
-
-

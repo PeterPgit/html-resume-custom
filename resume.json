@@ -1,29 +1,26 @@
 {
-	"name": "John Smith",
+	"name": "Peter Pham",
 	"title": "Something Something Title",
 	"info": [
 		{
 			"type": "phone",
-			"data": "123-456-7890"
+			"data": "[blank]"
 		},
 		{
 			"type": "email",
-			"data": "RealEmail@email.com"
+			"data": "peterphaman@protonmail.com"
 		},
 		{
 			"type": "website",
-			"data": "google.com"
-		},
-		{
-			"type": "linkedin",
-			"data": ""
+			"data": "peterp.site"
 		},
 		{
 			"type": "github",
-			"data": "github.com/"
+			"data": "github.com/PeterPGit"
 		}
 
 	],
+
 	"work": [
 		{
 			"job": "Job One",
@@ -33,42 +30,61 @@
 			"description": "A lot of really cool stuff happened at this place. As for now, this will be acting as a placeholder."
 		}
 	],
+
 	"volunteer": [
 		{
-			"job": "Placeholder Job",
+			"job": "Hospice Volunteer",
+			"date": "10/2020 – ",
+			"place": "Brookdale Hospice",
+			"location": "Overland Park, KS"
+		},
+
+		{
+			"job": "Altar Server",
+			"date": "09/2012 – 02/2020",
+			"place": "Church of the Holy Cross",
+			"location": "Overland Park, KS"
+		},
+
+		{
+			"job": "Placeholder Volunteer",
+			"date": "00-0000",
+			"place": "Placeholder Place",
+			"location": "City, State"
+		},
+
+		{
+			"job": "Placeholder Volunteer",
 			"date": "00-0000",
 			"place": "Placeholder Place",
 			"location": "City, State"
 		}
 	],
+
 	"education": [
 		{
-			"job": "Placeholder School",
+			"job": "PLACEHOLDER",
 			"date": "00.0000-",
-			"place": "PLACEHOLDER SCHOOL",
-			"location": "PLACEHOLDER LOCATION",
-			"graduation": "PLACEHOLDER DATE",
-			"gpa": "PLACEHOLDER GPA",
+			"place": "St. James Academy",
+			"location": "Lenexa, Kansas",
+			"graduation": "May 2021",
+			"gpa": "x/4.0 UW",
 			"description": "PLACEHOLDER DESCRIPTION"
 		}
 	],
-	"skills": {
-		"proficient": [
-			"Placeholder"
-		],
-		"familiar": [
-			"Placeholder"
-		],
-		"tools": [
-			"Placeholder"
-		]
-	},
+
+	"extra": [
+		"National Honors Society",
+		"Extracurricular Two"
+],
+
+	"skills": [
+		"Placeholder Skill One",
+		"Placeholder Skill Two"
+	],
+
 	"awards": [
 		"Placeholder Award One",
 		"Placeholder Award Two"
-	],
-	"strengths": [
-		"Placeholder Strength One",
-		"Placeholder Strength"
 	]
 }
