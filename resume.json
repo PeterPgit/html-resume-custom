@@ -1,82 +1,127 @@
 {
 	"name": "Peter Pham",
-	"title": "Something Something Title",
-	"info": [
-		{
+	"title": "High School Senior",
+	"info": [{
 			"type": "phone",
-			"data": "[blank]"
+			"data": "(913)-548-3525"
 		},
 		{
 			"type": "email",
 			"data": "peterphaman@protonmail.com"
 		},
 		{
-			"type": "website",
-			"data": "peterp.site"
+			"type": "email",
+			"data": "peterphaman@gmail.com"
 		},
 		{
-			"type": "github",
-			"data": "github.com/PeterPGit"
+			"type": "website",
+			"data": "peterpham.me"
 		}
 
 	],
 
-	"work": [
-		{
-			"job": "Job One",
-			"date": "01.1999-",
-			"place": "An Interesting Place",
-			"location": "Middle of Nowhere, KS",
-			"description": "A lot of really cool stuff happened at this place. As for now, this will be acting as a placeholder."
-		}
-	],
+	"work": [{
+		"job": "Job One",
+		"date": "01.1999-",
+		"place": "An Interesting Place",
+		"location": "Middle of Nowhere, KS",
+		"description": "A lot of really cool stuff happened at this place. As for now, this will be acting as a placeholder."
+	}],
 
-	"volunteer": [
-		{
+	"volunteer": [{
 			"job": "Hospice Volunteer",
-			"date": "10/2020 – ",
+			"date": "10/2020 – Current",
 			"place": "Brookdale Hospice",
 			"location": "Overland Park, KS"
 		},
 
 		{
 			"job": "Altar Server",
-			"date": "09/2012 – 02/2020",
+			"date": "2012 – 2020",
 			"place": "Church of the Holy Cross",
 			"location": "Overland Park, KS"
 		},
 
 		{
-			"job": "Placeholder Volunteer",
-			"date": "00-0000",
-			"place": "Placeholder Place",
-			"location": "City, State"
+			"job": "Youth Court Juror",
+			"date": "2019-2020",
+			"place": "Johnson County Courthouse",
+			"location": "Olathe, KS"
 		},
 
 		{
-			"job": "Placeholder Volunteer",
-			"date": "00-0000",
-			"place": "Placeholder Place",
-			"location": "City, State"
+			"job": "Drop-off Coordinator",
+			"date": "2017-2018",
+			"place": "Turnstyles",
+			"location": "Overland Park, KS"
 		}
 	],
 
-	"education": [
+	"education": [{
+		"job": "PLACEHOLDER",
+		"date": "08.2017-",
+		"place": "St. James Academy",
+		"location": "Lenexa, Kansas",
+		"graduation": "May 2021",
+		"gpa": "97.77%",
+		"description": "PLACEHOLDER DESCRIPTION"
+	}],
+
+
+	"sports": [{
+			"name": "Cross Country",
+			"details": "Four year cross country athlete with practice everyday after school during the fall and conditioning weekday mornings in the summer.",
+			"date": "2017-2020"
+		},
+
 		{
-			"job": "PLACEHOLDER",
-			"date": "00.0000-",
-			"place": "St. James Academy",
-			"location": "Lenexa, Kansas",
-			"graduation": "May 2021",
-			"gpa": "x/4.0 UW",
-			"description": "PLACEHOLDER DESCRIPTION"
+			"name": "Track",
+			"details": "Four year track athlete with practice everyday after school during the spring and conditioning in the winter.",
+			"date": "2018-2021 (Planned)"
 		}
 	],
 
-	"extra": [
-		"National Honors Society",
-		"Extracurricular Two"
-],
+	"clubs": [{
+			"name": "Thunder Service Club",
+			"details": "Work with other club members to develop a strong group of peers while completing service within the school and community."
+		},
+
+		{
+			"name": "Thunder Broadcasting Network",
+			"details": "Assist the broadcasting network by completing a variety of tasks, such as camera operator, and being a flexible member in order to produce a live broadcast of school games and events."
+		},
+
+		{
+			"name": "Spikeball Club",
+			"details": "Assist the club leaders by acting as an instructor for new players."
+		}
+	],
+
+	"others": [
+
+		{
+			"name": "Website",
+			"details": "Learn the basics of computer programming and web design by creating and maintaining a website, while exploring and implementing topics and programs of interest."
+		},
+
+		{
+			"name": "House Captain",
+			"details": "Assist the Community Captains and school leaders with an assortment of tasks. Supervise a 'house' which consists of a group of 20 students ranging from freshman to seniors. Plan and direct activities everyday to foster community and friendship among students."
+		},
+
+		{
+			"name": "National Honors Society",
+			"details": "Maintain a high gpa, be in good standing with administration, and complete service within the school and community."
+		},
+
+		{
+			"name": "Student Ambassador",
+			"details": "Volunteer for school activities and serve as a guide for middle schoolers seeking to learn more about high school.",
+			"date": " | 2017-2018"
+		}
+
+	],
+
 
 	"skills": [
 		"Placeholder Skill One",
@@ -84,7 +129,8 @@
 	],
 
 	"awards": [
-		"Placeholder Award One",
-		"Placeholder Award Two"
+		"Letter in Cross Country",
+		"Kindest Kansas Citian Essay Award Winner",
+		"First Honors Honor Roll | 2017 - Current"
 	]
 }

@@ -1,13 +1,16 @@
 $.getJSON('resume.json', function (data) {
 	/* The parameter (data) will refer to the resume.json whenever called later on in the document */
-	loadHeader(data);
+	/* loadHeader(data);
 	loadInfo(data.info);
-	loadExperience(data.work, "work");
+	/* loadExperience(data.work, "work"); */
 	loadExperience(data.volunteer, "volunteer");
-	loadExperience(data.education, "education");
-	loadExtracurriculars(data.extra, "extra");
-	loadSkills(data.skills, "skill");
+	/* loadExperience(data.education, "education"); */
+	loadExtra(data.sports, "sports");
+	loadExtra(data.clubs, "clubs");
+	loadExtra(data.others, "others");
+	/* loadSkills(data.skills, "skill"); */
 	loadList(data.awards, "awards");
+	loadList(data.interests, "interests");
 });
 
 /* Name, Title */
@@ -48,14 +51,6 @@ function loadExperience(data, type) {
 	}
 };
 
-/* Extracurriculars */
-function loadExtracurriculars(data, type) {
-	var container = document.getElementById(type);
-	for (var i = 0; i < data.length; i++) {
-		container.appendChild(createNode("li", 'none', data[i]));
-	}
-}
-
 /* Graduation, GPA */
 function extraInfo(data, type) {
 	if (type == "education") {
@@ -76,11 +71,11 @@ function extraInfo(data, type) {
 function loadSkills(data, type) {
 	var container = document.getElementById(type);
 	for (var i = 0; i < data.length; i++) {
-		container.appendChild(createNode("li", 'none',data[i]));
+		container.appendChild(createNode("li", 'none', data[i]));
 	}
 }
 
-/* Awards & Honors, Extracurriculars */
+/* Awards & Honors,*/
 function loadList(data, type) {
 	console.log(data, type);
 	var container = document.getElementById(type);
@@ -88,6 +83,39 @@ function loadList(data, type) {
 		container.appendChild(createNode("li", 'none', data[i]));
 	}
 }
+
+/* Extracurriculars */
+function loadExtra(data, type) {
+	var section = document.getElementById(type);
+	for (var i = 0; i < data.length; i++) {
+		var current = data[i];
+		var s = createNode('section', "blocks");
+		s.appendChild(createNode('div', "decorator"));
+		var details = createNode('div', "details");
+		details.appendChildren(
+			createNode('span', "name", current.name),
+			createNode('span', "date", current.date),
+			document.createElement('br'),
+			createNode('span', "description", current.details)
+		);
+		s.appendChild(details);
+		section.appendChild(s);
+	}
+};
+
+/*
+function extraDate(data, type) {
+	if (type == "sports") {
+		if (data.date != null || data.date) {
+			var date = createNode('span', "date", data.date);
+			var result = document.createElement('span');
+			result.appendChild(date);
+			return result;
+		}
+	}
+	return document.createElement("br");
+}
+*/
 
 HTMLElement.prototype.appendChildren = function () {
 	for (var i = 0; i < arguments.length; i++)
